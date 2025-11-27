@@ -24,8 +24,8 @@ h2{font-size:32px;margin-bottom:8px}
 .logo-img{height:60px;width:auto;display:block;object-fit:contain}
 .logo-text{font-weight:700;font-size:16px;color:var(--accent);letter-spacing:-0.5px}
 .main-nav{display:flex;gap:24px}
-.main-nav a{color:var(--muted);font-size:14px}
-.main-nav a:hover{color:var(--dark)}
+.main-nav a{color:var(--accent);font-size:17px;font-weight:700}
+.main-nav a:hover{color:var(--accent)}
 
 /* Hero */
 .hero{background:linear-gradient(135deg,#f7f8fb 0%,#e6e9ef 100%);padding:60px 0}
