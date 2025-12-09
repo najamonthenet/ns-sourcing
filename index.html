@@ -1,246 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b6cf6" />
-  <title>NS Sourcing — Apparel Sourcing & Supply Chain Management</title>
-  <meta name="description" content="NS Sourcing provides end-to-end apparel sourcing, supply chain management, quality control and on-time delivery solutions for brands, retailers and buyers worldwide." />
-  <meta name="keywords" content="apparel sourcing, supply chain management, quality control, manufacturing, fashion sourcing" />
-  <meta property="og:title" content="NS Sourcing — Apparel Sourcing & Supply Chain Management" />
-  <meta property="og:description" content="Connect with reliable manufacturers. Manage production end-to-end. Protect your margins with robust quality oversight." />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <style>
-    .main-nav a { color: #8B0000; margin-right: 4px; }
-    .main-nav a:hover { color: #A52A2A; text-decoration: none; }
-    .nav-icon { margin-right: 6px; }
-  </style>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230b6cf6' width='100' height='100'/><text x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='white' font-family='sans-serif'>NS</text></svg>" /> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS Sourcing - Global Apparel & Textile Supply Chain Management</title>
+    <meta name="description" content="NS Sourcing provides full package end-to-end apparel and textile supply chain management services including buying, sourcing, merchandising and audit services.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo-link" href="/">
-        <img src="NSS-Logo_Small.png" srcset="NSS-Logo-Big.png 2x" height="60" alt="NS Sourcing Logo" class="logo-img" />
-      </a>
-      <nav class="main-nav">
-        <a href="/"><span class="nav-icon">🏠</span>Home</a>
-        <a href="#services"><span class="nav-icon">⚙️</span>Services</a>
-        <a href="#process"><span class="nav-icon">📋</span>Process</a>
-        <a href="#products"><span class="nav-icon">📦</span>Products</a>
-        <a href="#contact"><span class="nav-icon">📧</span>Contact</a>
-      </nav>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-ns">NS</span>
+                <span class="logo-text">Sourcing</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">🏠 Home</a>
+                <a href="#core-services" class="nav-link">Core Services</a>
+                <a href="#our-process" class="nav-link">Our Process</a>
+                <a href="#our-products" class="nav-link">Our Products</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#get-started" class="nav-link">Get Started</a>
+                <a href="#ecommerce" class="nav-link shop-btn">Shop Now</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">PKR 0</span>
+            </div>
+            <div class="cod-notice">
+                🚚 <strong>COD Available</strong><br>Pay when you receive
+            </div>
+            <button class="checkout-btn">Proceed to Checkout (COD)</button>
+        </div>
     </div>
-  </header>
+    <div class="cart-overlay" id="cartOverlay"></div>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-left">
-          <h1>Sourcing & Supply Chain Excellence for Apparel</h1>
-          <p class="hero-subtitle">We connect buyers, brands and retailers with reliable manufacturers worldwide. Manage production end-to-end and protect your margins with robust quality control, transparent logistics, and on-time delivery.</p>
-          <div class="hero-buttons">
-            <a class="cta" href="#contact">Start a project</a>
-            <a class="cta-secondary" href="#services">Learn more</a>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Global Apparel & Textile Supply Chain Management</h1>
+            <p>Full package end-to-end service including Buying, Sourcing, Merchandising and Audit services for International Buyers, Brands and Retailers</p>
+            <div class="hero-buttons">
+                <a href="#get-started" class="btn btn-primary">Get Started</a>
+                <a href="#core-services" class="btn btn-secondary">Our Services</a>
+            </div>
         </div>
-        <div class="hero-right" aria-hidden="true">
-          <div class="hero-stat">
-            <div class="stat-number">80+</div>
-            <div class="stat-label">Factories managed</div>
-          </div>
-          <div class="hero-stat">
-            <div class="stat-number">2.50M+</div>
-            <div class="stat-label">Units delivered annually</div>
-          </div>
-        </div>
-      </div>
-    </section>
-<section id="services" class="container services">
-      <h2>Core Services</h2>
-      <p class="section-intro">End-to-end solutions tailored to your sourcing and supply chain needs.</p>
-      <div class="grid">
-        <div class="card service-card">
-          <div class="service-icon">🌍</div>
-          <h3>Global Sourcing</h3>
-          <p>Supplier identification, negotiation, and onboarding across apparel categories, price points, and regions. We vet factories and manage supplier relationships.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">📊</div>
-          <h3>Supply Chain Management</h3>
-          <p>Production planning, real-time order tracking, and end-to-end visibility. Meet launch windows with confidence through milestone management and risk mitigation.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">✏️</div>
-          <h3>Product Development & Sampling</h3>
-          <p>Refine designs, produce technical specifications, and manage sample iterations until production-ready.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">💰</div>
-          <h3>Price Negotiation & Order Processing</h3>
-          <p>Transparent costing, expert negotiation, and streamlined order processing to secure competitive rates and ensure accurate PO fulfilment.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">🤝</div>
-          <h3>Ethical & Social Compliance Audits</h3>
-          <p>Ensure factories meet labor, safety, and environmental standards through regular audits and corrective action tracking.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">✓</div>
-          <h3>Quality Assurance & Control</h3>
-          <p>Pre-production approvals, in-line inspections, and final AQL checks to reduce returns and rework.</p>
-        </div>
-        <div class="card service-card">
-          <div class="service-icon">🚚</div>
-          <h3>Logistics & Shipping Management</h3>
-          <p>Freight coordination, customs clearance, and documentation management for smooth global shipping.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="process" class="container process">
-      <h2>Our Process</h2>
-      <p class="section-intro">A streamlined, transparent workflow from concept to delivery.</p>
-      <div class="process-steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Vendor/Factory Identification</h3>
-          <p>Search and vet manufacturers against your product, capability, lead time, and compliance requirements to build a shortlist of reliable partners.</p>
+    <!-- Core Services -->
+    <section id="core-services" class="section">
+        <div class="container">
+            <h2 class="section-title">Core Services</h2>
+            <p class="section-subtitle">Comprehensive supply chain solutions for your business</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Global Sourcing</h3>
+                    <p>Connect with verified manufacturers worldwide with quality and compliance assurance</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Supply Chain Management</h3>
+                    <p>End-to-end coordination from raw materials to final delivery</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Product Development & Sampling</h3>
+                    <p>Expert product development with rapid sampling and tech pack creation</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Price Negotiation & Order Processing</h3>
+                    <p>Competitive pricing and seamless order management</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>Ethical & Social Compliance</h3>
+                    <p>Ensure factories meet international labor and ethical standards</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Inspection and Audit Services</h3>
+                    <p>Rigorous quality control and compliance audits at every stage</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚢</div>
+                    <h3>Logistics & Shipping Management</h3>
+                    <p>Coordinated shipping, customs clearance, and delivery tracking</p>
+                </div>
+            </div>
         </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Sourcing</h3>
-          <p>Negotiate terms, manage sample development and approvals, and finalize contracts with selected suppliers.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Production</h3>
-          <p>Monitor milestones, conduct in-line QC inspections, and resolve issues during production.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Critical Path Management</h3>
-          <p>Monitor key production milestones and manage timelines rigorously. Identify and mitigate risks before they impact delivery. Proactive communication keeps everyone aligned.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">5</div>
-          <h3>Delivery</h3>
-          <p>Coordinate logistics, manage customs clearance, and ensure on-time delivery. Final QC inspection before handoff.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="products" class="container products">
-      <h2>Our Products</h2>
-      <p class="section-intro">Premium apparel collections tailored to your brand and market needs.</p>
-      <div class="grid">
-        <div class="card product-card">
-          <div class="product-icon">👕</div>
-          <h3>Knitwear (Sweats & Jerseys)</h3>
-          <p>Premium knitted apparel including sweaters, hoodies, jerseys, and cardigans. Crafted from quality fabrics for comfort and style.</p>
-          <a href="knitwear.html" target="_blank" class="product-link">View Collection →</a>
+    <!-- Our Process -->
+    <section id="our-process" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <p class="section-subtitle">Streamlined workflow from sourcing to delivery</p>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">🏭</div>
+                    <div class="process-number">01</div>
+                    <h3>Vendor/Factory Identification</h3>
+                    <p>Identify and verify suitable manufacturing partners</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">🔍</div>
+                    <div class="process-number">02</div>
+                    <h3>Sourcing</h3>
+                    <p>Material procurement and supplier coordination</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">⚙️</div>
+                    <div class="process-number">03</div>
+                    <h3>Production</h3>
+                    <p>Manufacturing oversight and quality monitoring</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">📅</div>
+                    <div class="process-number">04</div>
+                    <h3>Critical Path Management</h3>
+                    <p>Timeline optimization and milestone tracking</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">⏱️</div>
+                    <div class="process-number">05</div>
+                    <h3>Order TNA Management</h3>
+                    <p>Time and action calendar management</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">🎯</div>
+                    <div class="process-number">06</div>
+                    <h3>Total Quality Management</h3>
+                    <p>Comprehensive quality systems implementation</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">✓</div>
+                    <div class="process-number">07</div>
+                    <h3>Quality Assurance & QC</h3>
+                    <p>Final inspection and quality certification</p>
+                </div>
+            </div>
         </div>
-        <div class="card product-card">
-          <div class="product-icon">👗</div>
-          <h3>Denims & Wovens</h3>
-          <p>Durable denim jeans, woven trousers, and structured apparel for everyday and professional wear. Quality craftsmanship and comfortable fit.</p>
-          <a href="denims-wovens.html" target="_blank" class="product-link">View Collection →</a>
-        </div>
-        <div class="card product-card">
-          <div class="product-icon">🏃</div>
-          <h3>Activewear & Sportswear</h3>
-          <p>Performance-driven athletic wear including leggings, sports bras, and workout gear. Engineered for movement and breathability.</p>
-          <a href="activewear.html" target="_blank" class="product-link">View Collection →</a>
-        </div>
-        <div class="card product-card">
-          <div class="product-icon">🔧</div>
-          <h3>Workwear</h3>
-          <p>Professional and durable workwear apparel designed for comfort and safety in the workplace. Compliant with industry standards.</p>
-          <a href="workwear.html" target="_blank" class="product-link">View Collection →</a>
-        </div>
-      </div>
     </section>
 
-    <section class="container testimonials">
-      <h2>What Buyers Say</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial">
-          <p class="quote">"NS Sourcing cut our lead times by 30% and eliminated quality issues. Their transparency and proactive communication made all the difference."</p>
-          <p class="cite">— Director, Global Retail Brand</p>
+    <!-- Our Products -->
+    <section id="our-products" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Explore our comprehensive product categories</p>
+            
+            <div class="products-grid">
+                <div class="product-category-card" data-category="woven">
+                    <div class="category-image">👔</div>
+                    <h3>Woven Apparels</h3>
+                    <p>Chinos, Khakis, Cargos</p>
+                    <span class="view-collection">View Collection →</span>
+                </div>
+                <div class="product-category-card" data-category="denim">
+                    <div class="category-image">👖</div>
+                    <h3>Denims & Jeans</h3>
+                    <p>Premium Denim Collection</p>
+                    <span class="view-collection">View Collection →</span>
+                </div>
+                <div class="product-category-card" data-category="knitwear">
+                    <div class="category-image">🧥</div>
+                    <h3>Knitwear</h3>
+                    <p>Sweats & Jerseys</p>
+                    <span class="view-collection">View Collection →</span>
+                </div>
+                <div class="product-category-card" data-category="activewear">
+                    <div class="category-image">🏃</div>
+                    <h3>Activewear & Sportswear</h3>
+                    <p>Performance Apparel</p>
+                    <span class="view-collection">View Collection →</span>
+                </div>
+                <div class="product-category-card" data-category="workwear">
+                    <div class="category-image">🦺</div>
+                    <h3>Workwear</h3>
+                    <p>Professional & Industrial</p>
+                    <span class="view-collection">View Collection →</span>
+                </div>
+            </div>
         </div>
-        <div class="testimonial">
-          <p class="quote">"Finding reliable factories is hard. NS Sourcing's vetting process saved us from costly mistakes. They're a trusted partner now."</p>
-          <p class="cite">— Sourcing Manager, Fashion Startup</p>
-        </div>
-        <div class="testimonial">
-          <p class="quote">"Their logistics and customs expertise solved problems we didn't even know we had. Highly recommend for anyone scaling production."</p>
-          <p class="cite\">— VP Supply Chain, E-Commerce Retailer</p>
-        </div>
-      </div>
     </section>
 
-    <section class="container contact" id="contact">
-      <h2>Get Started</h2>
-      <p class="section-intro">Tell us about your sourcing needs. We'll review and connect within 24 hours.</p>
-      <form class="contact-form" name="contact" method="POST" action="#" netlify>
-        <div class="form-row">
-          <label>
-            Company name
-            <input type="text" name="company" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required />
-          </label>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">What Customers Say</h2>
+            <p class="section-subtitle">Trusted by brands worldwide</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">NS Sourcing cut our lead times by 30% and eliminated quality issues. Their transparency and proactive communication made all the difference.</p>
+                    <p class="testimonial-author">— Director, Global Retail Brand</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Finding reliable factories is hard. NS Sourcing's vetting process saved us from costly mistakes. They're a trusted partner now.</p>
+                    <p class="testimonial-author">— Sourcing Manager, Fashion Startup</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Their logistics and customs expertise solved problems we didn't even know we had. Highly recommend for anyone scaling production.</p>
+                    <p class="testimonial-author">— VP Supply Chain, E-Commerce Retailer</p>
+                </div>
+            </div>
         </div>
-        <div class="form-row">
-          <label>
-            Product category (e.g., T-shirts, Dresses, Activewear)
-            <input type="text" name="category" />
-          </label>
-          <label>
-            Estimated monthly volume
-            <input type="text" name="volume" placeholder="e.g., 10,000 units" />
-          </label>
-        </div>
-        <label>
-          Project summary
-          <textarea name="message" rows="5" placeholder="Tell us about your project, timeline, and priorities."></textarea>
-        </label>
-        <button type="submit">Send Inquiry</button>
-      </form>
-      <p class="contact-alt">Or email us directly at <a href="mailto:ns.sourcing@gmail.com">ns.sourcing@gmail.com</a></p>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-col">
-          <h4>NS Sourcing</h4>
-          <p>End-to-end apparel sourcing and supply chain management for brands, retailers, and buyers.</p>
+    <!-- Get Started -->
+    <section id="get-started" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Get Started</h2>
+            <p class="section-subtitle">Tell us about your sourcing needs. We'll review and connect within 24 hours.</p>
+            
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvgebngp" method="POST">
+            
+<!--ORIGINAL HTML CODE BY CLAUDE   form class="contact-form" id="contactForm"-->
+          
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" name="company" required placeholder="Your company name">
+                </div>
+		<div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" name="email" required placeholder="your@email.com">
+                </div>
+		<div class="form-group">
+                    <label>Product Category *</label>
+                    <input type="text" name="category" required placeholder="e.g., T-shirts, Dresses, Activewear">
+                </div>
+		<div class="form-group">
+                    <label>Estimated Monthly Volume *</label>
+                    <input type="text" name="volume" required placeholder="e.g., 5,000 units">
+                </div>
+		<div class="form-group">
+                    <label>Project Summary *</label>
+                    <textarea name="summary" rows="5" required placeholder="Tell us about your project, timeline and priorities"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Send Inquiry</button>
+           </form>
         </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <p>Email: <a href="mailto:ns.sourcing@gmail.com">ns.sourcing@gmail.com</a></p>
-          <p>Domain: ns-sourcing.com</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> NS Sourcing. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- E-commerce Section -->
+    <section id="ecommerce" class="section">
+        <div class="container">
+            <h2 class="section-title">NS Sourcing Shop</h2>
+            <p class="section-subtitle">Browse our complete collection. COD (Cash On Delivery) available for Pakistan.</p>
+            
+            <div class="cod-banner">
+                <span class="cod-icon">🚚</span>
+                <div>
+                    <strong>Cash On Delivery (COD) Only</strong>
+                    <p>All orders are delivered with COD option. Pay when you receive your products. Delivery within 3-7 business days across Pakistan.</p>
+                </div>
+            </div>
+
+            <div class="shop-grid" id="shopGrid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>&copy; 2024 NS Sourcing. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="mailto:ns.sourcing@gmail.com">✉️ ns.sourcing@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
